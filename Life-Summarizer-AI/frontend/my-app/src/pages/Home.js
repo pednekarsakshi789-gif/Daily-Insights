@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import {
   LineChart,
   Line,
@@ -65,10 +65,10 @@ function Home() {
   };
 
   /* ---------- GET RANDOM PROMPT ---------- */
-  const getRandomPrompt = () => {
+  const getRandomPrompt = useCallback(() => {
     const randomIndex = Math.floor(Math.random() * prompts.length);
     setCurrentPrompt(randomIndex);
-  };
+  }, [prompts.length]);
 
   /* ---------- WEEKLY INSIGHT ---------- */
   const getWeeklyMoodInsight = () => {
@@ -88,7 +88,7 @@ function Home() {
     fetchHistory();
     fetchWeeklyTrends();
     getRandomPrompt();
-  }, []);
+  }, [getRandomPrompt]);
 
   /* ---------- ADD PROMPT RESPONSE TO ENTRY ---------- */
   const addPromptResponseToEntry = () => {
