@@ -9,9 +9,9 @@ textblob     # For sentiment analysis logic
 # --- Data Visualization ---
 matplotlib   # For generating emotional trend graphs
 cryptography
-
-Flask
-
-Flask-CORS
-gunicorn
+flask==3.0.0
+gunicorn==21.2.0
+flask-cors==4.0.0
+python-dotenv==1.0.0
+# Add your other dependencies here
 
