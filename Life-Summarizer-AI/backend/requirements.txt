@@ -11,4 +11,7 @@ matplotlib   # For generating emotional trend graphs
 cryptography
 
 Flask
+
 Flask-CORS
+gunicorn
+
