@@ -1,28 +1,10 @@
-# --- Core Data Handling ---
-pandas      # For managing journal_entries.csv
-
-# --- AI & NLP Models ---
+pandas
 sumy
 nltk
-textblob     # For sentiment analysis logic
-
-# --- Data Visualization ---
-matplotlib   # For generating emotional trend graphs
+textblob
+matplotlib
 cryptography
 flask==3.0.0
 gunicorn==21.2.0
 flask-cors==4.0.0
 python-dotenv==1.0.0
-# Add your other dependencies here
-# Add your other dependencies here
-```
-
-#### **2. `Procfile`** (create in root directory)
-```
-web: gunicorn app:app --bind 0.0.0.0:$PORT
-```
-
-#### **3. `runtime.txt`** (optional, specifies Python version)
-```
-python-3.11.0
-
