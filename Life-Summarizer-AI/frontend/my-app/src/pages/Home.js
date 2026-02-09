@@ -8,7 +8,7 @@ import {
   CartesianGrid
 } from "recharts";
 
-const API_BASE = process.env.REACT_APP_API_URL || "https://daily-insights-pc83.onrender.com";
+const API_BASE = process.env.REACT_APP_API_URL || "https://daily-insights-4.onrender.com";
 function Home() {
   /* ---------- STATE ---------- */
   const [entry, setEntry] = useState("");
