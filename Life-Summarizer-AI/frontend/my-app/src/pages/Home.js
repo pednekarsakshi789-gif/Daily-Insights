@@ -143,7 +143,7 @@ function Home() {
             />
             <div className="prompt-button-group">
               <button className="btn btn-secondary" onClick={addPromptResponseToEntry}>
-                ➕ Log Response
+                ➕ Add Response
               </button>
               <button className="btn btn-secondary" onClick={getRandomPrompt}>
                 ✨ Next Prompt
@@ -244,7 +244,7 @@ function Home() {
           <h2>📚 Past Entries</h2>
           {history.length > 0 && (
             <button className="btn btn-danger" onClick={deleteHistory}>
-              🗑️ Delete All History
+              🗑️ Delete Past Entries
             </button>
           )}
         </div>
